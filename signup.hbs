@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>Signup Page</title>
+      <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"
+        integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      <link rel="stylesheet" href="../css/user.css">
+   </head>
+   <body>
+      <div class="wrapper">
+         <div class="title">
+            Sign Up Form
+         </div>
+         <form>
+            <div class="field">
+               <input type="text" required class="signup-name-input">
+               <label>Name</label>
+            </div>
+            <div class="field">
+               <input type="text" required class="signup-email-input">
+               <label>Email Address</label>
+            </div>
+            <div class="field">
+               <input type="password" required class="signup-password-input">
+               <label>Password</label>
+            </div>
+            
+            <div class="field">
+               <input type="submit" value="Signup" id="signup-submit-btn">
+            </div>
+            <div class="signup-link">
+               Already have account? <a href="/login">Login here</a>
+            </div>
+         </form>
+      </div>
+   </body>
+   <script type="module" src="../js/signup.js"></script>
+</html>

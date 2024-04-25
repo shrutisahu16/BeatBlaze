@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>Login Page</title>
+      <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"
+        integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      <link rel="stylesheet" href="../css/user.css">
+   </head>
+   <body>
+      <div class="wrapper">
+         <div class="title">
+            Login Form
+         </div>
+         <form>
+            <div class="field">
+               <input type="text" required class="login-email-input">
+               <label>Email Address</label>
+            </div>
+            <div class="field">
+               <input type="password" required class="login-password-input">
+               <label>Password</label>
+            </div>
+            <div class="content">
+               <div class="pass-link">
+                  <a href="/forgotpassword">Forgot password?</a>
+               </div>
+            </div>
+            <div class="field">
+               <input type="submit" value="Login" id="login-submit-btn">
+            </div>
+            <div class="signup-link">
+               Not a registered? <a href="/register">Signup now</a>
+            </div>
+         </form>
+      </div>
+   </body>
+   <script type="module" src="../js/login.js"></script>
+</html>
